@@ -1,14 +1,26 @@
 package 异常处理;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;;
+import java.io.FileNotFoundException;;
 public class FlieNotFound {
 
 	public static void main(String[] args) throws FileNotFoundException{
 		// TODO 自动生成的方法存根
 		File f=new File("D:/LOL.exe");
-		new FileInputStream(f);
+		try{
+			System.out.println("试图打开d:/LOL.exe");
+			new FileInputStream(f);
+			System.out.println("成功打开了LOL");
+		}
+		/*catch(FileNotFoundException e)//FileNotFoundException是exception的子类也可以使用exception来进行异常处理
+		{
+			System.out.println("LOL不存在");
+			e.printStackTrace();
+		}*/
+		catch(Exception e){
+			System.out.println("这是第二种异常处理方法");
+			e.printStackTrace();
+		}
 
 	}
 
