@@ -1,5 +1,2 @@
-This is my java learn code.
-I push it to git to protected from delete.
-I hope I can become a success man.
-let us go.
-The world is us.
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
